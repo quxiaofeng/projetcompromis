@@ -23,7 +23,7 @@ Domain Name
 >      A 192.30.252.154<br/>
 >      www CNAME QUXIAOFENG.GITHUB.IO<br/>
 
-![](/images/dnsconfig.png)
+![DNS Config in dot.tk](/images/dnsconfig.png)
 
 ##### CNAME
 
@@ -43,6 +43,8 @@ Git and Github Config
 8. Create a new Github repo in the Github webpage. For example: [`projetcompromis`](https://github.com/quxiaofeng/projetcompromis) (Project Compromise in French)
 9. Add the remote address to local git repo by `git remote add origin git@github.com:quxiaofeng/projetcompromis.git` in the local git folder
 10. Add all files, commit changes and push to the remote by `git add -A && git commit -sm 'git init the website' && git push -u origin gh-pages`
+
+![First Site Screen](/images/firstsite.png)
 
 ###### Then we finished the first site.
 
