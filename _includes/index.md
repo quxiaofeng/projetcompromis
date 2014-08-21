@@ -49,8 +49,8 @@ Domain Name
 2. Search and register a free domain name ([projetcompromis.tk](http://projetcompromis.tk) for example).
 3. Config the DNS (A and CNAME)
 
-| Domain Name           | type  | Address               |
-|:--------------------- |:---   |:----------------      |
+|                       |       |                       |
+|:-------------------   |:---   |:----------------      |
 |projetcompromis.tk     |  A    | 192.30.252.153        |
 |projetcompromis.tk     |  A    | 192.30.252.154        |
 |www.projetcompromis.tk | CNAME | QUXIAOFENG.GITHUB.IO  |
