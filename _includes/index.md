@@ -1,7 +1,7 @@
 Introduction
 -------
 
-This is a project (Projet in Français) about how to build a website.
+This is a project (**Projet Compromis** is *Project Compromise* in Français) about how to build a website.
 This project is based on:
 
 + [Jekyll](http://jekyllrb.com/)
