@@ -49,9 +49,10 @@ Domain Name
 2. Search and register a free domain name ([projetcompromis.tk](http://projetcompromis.tk) for example).
 3. Config the DNS (A and CNAME)
 
->      A 192.30.252.153<br/>
->      A 192.30.252.154<br/>
->      www CNAME QUXIAOFENG.GITHUB.IO<br/>
+>      |:----------------      |:---   |:----------------      |
+>      |projetcompromis.tk     |  A    | 192.30.252.153        |
+>      |projetcompromis.tk     |  A    | 192.30.252.154        |
+>      |www.projetcompromis.tk | CNAME | QUXIAOFENG.GITHUB.IO  |
 
 [![DNS Config in dot.tk](/images/dnsconfig.png)](/images/dnsconfig.png)
 
