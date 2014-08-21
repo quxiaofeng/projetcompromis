@@ -109,7 +109,7 @@ TODOs
 
 1. Revising the index page
 2. Removing the `contact`, `jobs` and add a `gallery`
-3. Updating the `members` - assigned to `miss-mi`
+3. Updating the `members` - assigned to [`miss-mi`](https://github.com/miss-mi)
 4. Editing the CSS style
 5. Choosing the color theme
 6. Setting up a Virtual machine and the local test environment for the jekyll site.
