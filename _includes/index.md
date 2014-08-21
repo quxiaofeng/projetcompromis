@@ -19,9 +19,9 @@ Domain Name
 2. Search and register a free domain name ([projetcompromis.tk](http://projetcompromis.tk) for example).
 3. Config the DNS (A and CNAME)
 
->    A 192.30.252.153
->    A 192.30.252.154
->    www CNAME QUXIAOFENG.GITHUB.IO
+>      A 192.30.252.153<br/>
+>      A 192.30.252.154<br/>
+>      www CNAME QUXIAOFENG.GITHUB.IO<br/>
 
 ![](/images/dnsconfig.png)
 
@@ -42,7 +42,13 @@ Git and Github Config
 7. Create `gh-pages` as the default branch by `git checkout -b gh-pages` in the local git folder
 8. Create a new Github repo in the Github webpage. For example: [`projetcompromis`](https://github.com/quxiaofeng/projetcompromis) (Project Compromise in French)
 9. Add the remote address to local git repo by `git remote add origin git@github.com:quxiaofeng/projetcompromis.git` in the local git folder
-9. Add all files, commit changes and push to the remote by `git add -A && git commit -sm 'git init the website' && git push -u origin gh-pages`
+10. Add all files, commit changes and push to the remote by `git add -A && git commit -sm 'git init the website' && git push -u origin gh-pages`
+
+###### Then we finished the first site.
+
+After each modification, just add, commit, and push like this
+
+      git add -A && git commit -sm 'WHAT-YOU-HAVE-DONE' && git push
 
 Github Flavored Markdown
 ----------------
