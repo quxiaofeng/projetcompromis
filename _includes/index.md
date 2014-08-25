@@ -164,9 +164,8 @@ After each modification, just add, commit, and push like this
 [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 ----------------
 
-The site is based on [Jekyll](http://jekyllrb.com/)and hosted in [Github](https://github.com/)
-
-Therefore, the pages are in markdown format, and the markdown that the Github using is a little different with general markdown.
+The site is based on [Jekyll](http://jekyllrb.com/) and hosted in [Github](https://github.com/). 
+Therefore, the pages are in markdown format, and the markdown that the Github using is a little different with the general markdown.
 
 HTML5 and CCS
 ----------------
