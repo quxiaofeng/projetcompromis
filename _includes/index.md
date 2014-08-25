@@ -122,7 +122,7 @@ Check the global settings by `git config --list`
 
 #### 6. Test the Github connection
 
-    $ ssh –T git@github.com
+    $ ssh -T git@github.com
 
 #### Further information of Git can be found with
 
