@@ -65,15 +65,82 @@ Domain Name
 Git and Github Config
 ----------------
 
+### Git Config
+
+1. Download Git from [Official Website](http://git-scm.com/download/win) or [download manually](https://github.com/msysgit/msysgit/releases/download/Git-1.9.4-preview20140815/Git-1.9.4-preview20140815.exe)
+
+![](/images/download-git.png)
+
+2. Install Git with recommended settings
+
+![](/images/git-install-path-options.png)
+
+This options is normally safe and powerful enough for git users.
+
+![](/images/git-install-line-ending-options.png)
+
+This options preserves the original line endings and commits platform independent codes.
+
+3. Generate SSH key using **Git Bash**
+
+Check local ssh keys
+
+    $ cd ~/. ssh
+    $ ls
+
+Backup local ssh keys if there are already some
+
+    $ mkdir key_backup
+    $ cp id_rsa* key_backup
+    $ rm id_rsa*
+
+Finally generate a new key using your email address
+
+    $ ssh-keygen –t rsa –C "your@email.address"
+
+4. Copy the public key and paste it to your github account
+
+    $ vim ~/.ssh/id_rsa.pub
+
+In windows, *Mark* and copy like this. (Exit by `ESC` - `:q` - Enter)
+
+![](/images/git-install-mark-in-windows.jpg)
+
+And then *Paste* the public ssh key to your github account like this.
+
+Open `Github.com` - `Settings` - `SSH keys` - `Add SSH key`
+
+![](/images/github-add-ssh-key-menu.png)
+
+5. Set Git global settings in **Git Bash**
+
+    $ git config --global user.name "Your Name in English"
+    $ git config --global user.email "your@email.address"
+    $ git config --global push.default matching
+
+Check the global settings by `git config --list`
+
+6. Test the Github connection by `$ ssh –T git@github.com`
+
+
+### Github Config
+
 1. Register a [Github](https://github.com/) Account
-2. Install Git, generate a SSH key, copy the SSH key to your [Github](https://github.com/) account, and set global settings
+
 3. Clone a [jekyll](http://jekyllrb.com/) site (here is the [palmprint repo](https://github.com/quxiaofeng/palmprint) demonstrated in [Palmprint.tk](http://palmprint.tk/) ) in git bash by `git clone git@github.com:quxiaofeng/palmprint.git`
+
 4. Edit all files
+
 5. Remove the old git repo by `rm .git -rf` in the local git folder
+
 6. Initial the new git repo by `git init` in the local git folder
+
 7. Create `gh-pages` as the default branch by `git checkout -b gh-pages` in the local git folder
+
 8. Create a new [Github](https://github.com/) repo in the [Github](https://github.com/) webpage. For example: [`projetcompromis`](https://github.com/quxiaofeng/projetcompromis) (Project Compromise in French)
+
 9. Add the remote address to local git repo by `git remote add origin git@github.com:quxiaofeng/projetcompromis.git` in the local git folder
+
 10. Add all files, commit changes and push to the remote by `git add -A && git commit -sm 'git init the website' && git push -u origin gh-pages`
 
 ###### Then we finished the first site like [this](/images/firstsite.png)
