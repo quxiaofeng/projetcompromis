@@ -67,11 +67,11 @@ Git and Github Config
 
 ### Git Config
 
-1. Download Git from [Official Website](http://git-scm.com/download/win) or [download manually](https://github.com/msysgit/msysgit/releases/download/Git-1.9.4-preview20140815/Git-1.9.4-preview20140815.exe)
+#### 1. Download Git from [Official Website](http://git-scm.com/download/win) or [download manually](https://github.com/msysgit/msysgit/releases/download/Git-1.9.4-preview20140815/Git-1.9.4-preview20140815.exe)
 
 ![](/images/download-git.png)
 
-2. Install Git with recommended settings
+#### 2. Install Git with recommended settings
 
 ![](/images/git-install-path-options.png)
 
@@ -81,7 +81,7 @@ This options is normally safe and powerful enough for git users.
 
 This options preserves the original line endings and commits platform independent codes.
 
-3. Generate SSH key using **Git Bash**
+#### 3. Generate SSH key using **Git Bash**
 
 Check local ssh keys
 
@@ -98,7 +98,7 @@ Finally generate a new key using your email address
 
     $ ssh-keygen –t rsa –C "your@email.address"
 
-4. Copy the public key and paste it to your github account
+#### 4. Copy the public key and paste it to your github account
 
     $ vim ~/.ssh/id_rsa.pub
 
@@ -112,7 +112,7 @@ Open `Github.com` - `Settings` - `SSH keys` - `Add SSH key`
 
 ![](/images/github-add-ssh-key-menu.png)
 
-5. Set Git global settings in **Git Bash**
+#### 5. Set Git global settings in **Git Bash**
 
     $ git config --global user.name "Your Name in English"
     $ git config --global user.email "your@email.address"
@@ -120,7 +120,7 @@ Open `Github.com` - `Settings` - `SSH keys` - `Add SSH key`
 
 Check the global settings by `git config --list`
 
-6. Test the Github connection by `$ ssh –T git@github.com`
+#### 6. Test the Github connection by `$ ssh –T git@github.com`
 
 
 ### Github Config
