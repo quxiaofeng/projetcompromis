@@ -96,7 +96,7 @@ Backup local ssh keys if there are already some
 
 Finally generate a new key using your email address
 
-    $ ssh-keygen –t rsa –C "your@email.address"
+    $ ssh-keygen -t rsa -C "your@email.address"
 
 #### 4. Copy the public key and paste it to your github account
 
