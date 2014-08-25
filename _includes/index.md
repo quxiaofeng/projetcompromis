@@ -62,10 +62,10 @@ Domain Name
 >    projetcompromis.tk
 
 
-Git and Github Config
+Git and Github
 ----------------
 
-### Git Config
+### Git Install and Config
 
 #### 1. Download Git from [Official Website](http://git-scm.com/download/win) or [download manually](https://github.com/msysgit/msysgit/releases/download/Git-1.9.4-preview20140815/Git-1.9.4-preview20140815.exe)
 
@@ -102,13 +102,13 @@ Finally generate a new key using your email address
 
     $ vim ~/.ssh/id_rsa.pub
 
-In windows, *Mark* and copy like this. (Exit by `ESC` - `:q` - Enter)
+In windows, *Mark* and copy like this. (Exit `vim` by pressing `ESC` - `:q` - Enter)
 
 ![](/images/git-install-mark-in-windows.jpg)
 
 And then *Paste* the public ssh key to your github account like this.
 
-Open `Github.com` - `Settings` - `SSH keys` - `Add SSH key`
+Open `Github.com` - `Settings` - `SSH keys` - `Add SSH key`, name a title (usually the computer nickname) and paste the public SSH key.
 
 ![](/images/github-add-ssh-key-menu.png)
 
@@ -120,28 +120,38 @@ Open `Github.com` - `Settings` - `SSH keys` - `Add SSH key`
 
 Check the global settings by `git config --list`
 
-#### 6. Test the Github connection by `$ ssh –T git@github.com`
+#### 6. Test the Github connection
 
+    $ ssh –T git@github.com
+
+#### Further information of Git can be found with
+
+    $ git --help
+    $ git status --help
+    $ git add --help
+    $ git commit --help
+    $ git push --help
+    $ git remote --help
 
 ### Github Config
 
 1. Register a [Github](https://github.com/) Account
 
-3. Clone a [jekyll](http://jekyllrb.com/) site (here is the [palmprint repo](https://github.com/quxiaofeng/palmprint) demonstrated in [Palmprint.tk](http://palmprint.tk/) ) in git bash by `git clone git@github.com:quxiaofeng/palmprint.git`
+2. Clone a [jekyll](http://jekyllrb.com/) site (here is the [palmprint repo](https://github.com/quxiaofeng/palmprint) demonstrated in [Palmprint.tk](http://palmprint.tk/) ) in git bash by `git clone git@github.com:quxiaofeng/palmprint.git`
 
-4. Edit all files
+3. Edit all files
 
-5. Remove the old git repo by `rm .git -rf` in the local git folder
+4. Remove the old git repo by `rm .git -rf` in the local git folder
 
-6. Initial the new git repo by `git init` in the local git folder
+5. Initial the new git repo by `git init` in the local git folder
 
-7. Create `gh-pages` as the default branch by `git checkout -b gh-pages` in the local git folder
+6. Create `gh-pages` as the default branch by `git checkout -b gh-pages` in the local git folder. (**gh-pages** branch is the *default* github pages branch.)
 
-8. Create a new [Github](https://github.com/) repo in the [Github](https://github.com/) webpage. For example: [`projetcompromis`](https://github.com/quxiaofeng/projetcompromis) (Project Compromise in French)
+7. Create a new [Github](https://github.com/) repo in the [Github](https://github.com/) webpage. For example: [`projetcompromis`](https://github.com/quxiaofeng/projetcompromis) (Project Compromise in French)
 
-9. Add the remote address to local git repo by `git remote add origin git@github.com:quxiaofeng/projetcompromis.git` in the local git folder
+8. Add the remote address to local git repo by `git remote add origin git@github.com:quxiaofeng/projetcompromis.git` in the local git folder
 
-10. Add all files, commit changes and push to the remote by `git add -A && git commit -sm 'git init the website' && git push -u origin gh-pages`
+9. Add all files, commit changes and push to the remote by `git add -A && git commit -sm 'Init the website' && git push -u origin gh-pages`
 
 ###### Then we finished the first site like [this](/images/firstsite.png)
 
