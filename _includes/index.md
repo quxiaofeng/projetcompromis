@@ -75,11 +75,11 @@ Git and Github Config
 
 ![](/images/git-install-path-options.png)
 
-This options is normally safe and powerful enough for git users.
+This option is normally safe and powerful enough for git users.
 
 ![](/images/git-install-line-ending-options.png)
 
-This options preserves the original line endings and commits platform independent codes.
+This option preserves the original line endings and commits platform independent codes.
 
 #### 3. Generate SSH key using **Git Bash**
 
