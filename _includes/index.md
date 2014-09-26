@@ -47,7 +47,7 @@ Domain Name
 
 1. Register in [www.dot.tk](http://www.dot.tk)
 2. Search and register a free domain name ([projetcompromis.tk](http://projetcompromis.tk) for example).
-3. Config the DNS (A and CNAME)
+3. Configure the DNS (A and CNAME)
 
 | Domain Name           | Type  | Address               |
 |:-------------------   |:---   |:----------------      |
@@ -132,6 +132,23 @@ Check the global settings by `git config --list`
     $ git commit --help
     $ git push --help
     $ git remote --help
+
+### Git Basics
+
+1. `git status` show current git repo status
+
+2. `git add .` or `git add -A` or `git add *.md` or `git add
+newfile.txt` add new files to git watch list.
+
+3. `git commit -sm "Commit log (WHAT YOU HAVE DONE)"` commit (confirm)
+your changes.
+
+4. `git pull` and `git push` pull (download) and push (upload) repo to
+the remote
+
+5. `cd /d/code` CD stands for Change Directory and in windows `D:\code` is `/d/code`.
+
+6. `&&` can link more than two command in one line. For example, `git add -A && git commit -sm "Add a new image file" && git pull && git push` a. Add new files to the git watch list; b. Commit the file change to the repo with the commit log; c. Pull from the repo in case of others making some changes; d. Push the new repo to remote (If others did not make any change or the change can be merged fast-forward automatically)
 
 ### Github Config
 
